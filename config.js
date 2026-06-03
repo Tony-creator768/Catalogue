@@ -3,7 +3,7 @@
 // Do not enable sample fallback on the official Finance website.
 window.CATALOGUE_CONFIG = {
   ENV: "production",
-  DATA_URL: "https://script.google.com/macros/s/AKfycbyHIX_yzL1Dugjj9oa8gCRPysS5uftJl2I0XbUCEnA0ZEfJhs5uoRWPE8PAkfucztoI/exec",
+  DATA_URL: "https://script.google.com/macros/s/AKfycbyyWi-pnBOP_H3ODGux2qRPhyGz1_YD_ip4gXf37gaxsKGEI1-S1ZClCnvp7dh2zw5QEQ/exec",
   APPROVED_ONLY: true,
   REQUIRE_READY_STATUS: true,
   ALLOW_SAMPLE_FALLBACK: false,
