@@ -1,12 +1,12 @@
 :root {
-  --ink: #172033;
-  --muted: #63666A;
+  --ink: #0B0B0B;
+  --muted: #1F1F1F;
   --line: #D9DEE5;
   --soft: #F4F5F7;
   --card: #FFFFFF;
   --navy: #041E42;
-  --blue: #2F6FDB;
-  --gray: #63666A;
+  --blue: #041E42;
+  --gray: #1F1F1F;
   --silver: #EEF1F4;
   --green: #246B3D;
   --red: #A33D2D;
@@ -320,7 +320,7 @@ input, select {
   border-radius: 999px;
   padding: 5px 8px;
   font-size: 0.66rem;
-  color: #4B5563;
+  color: var(--ink);
   font-weight: 800;
   line-height: 1;
 }
@@ -346,7 +346,7 @@ input, select {
 }
 
 .amenities {
-  color: #4B5563;
+  color: var(--ink);
   font-size: 0.72rem;
   line-height: 1.45;
   min-height: 0;
@@ -366,7 +366,7 @@ input, select {
   border-radius: 999px;
   padding: 6px 8px;
   font-size: 0.66rem;
-  color: #4B5563;
+  color: var(--ink);
   font-weight: 700;
   line-height: 1.1;
   white-space: nowrap;
@@ -501,7 +501,7 @@ input, select {
   white-space: pre-line;
   margin: 0;
   line-height: 1.52;
-  color: #4B5563;
+  color: var(--ink);
   font-size: 0.86rem;
 }
 
@@ -931,7 +931,7 @@ textarea {
 .unit-row strong,
 .unit-option-line strong,
 .compare-unit-line strong {
-  color: #2F6FDB;
+  color: var(--navy);
 }
 
 
@@ -960,7 +960,7 @@ textarea {
 
 .reservation-select {
   border: 1px solid rgba(47, 111, 219, 0.35);
-  color: #041E42;
+  color: var(--navy);
   background: #F3F8FF;
   border-radius: 999px;
   padding: 8px 10px;
@@ -1365,4 +1365,83 @@ textarea {
 .footer-note {
   border-top: 1px solid var(--line);
   padding-top: 14px;
+}
+
+
+/* === High-contrast readable text update ===
+   Most public-facing text now uses clear near-black.
+   White is retained only where the background is dark navy. */
+body,
+.card,
+.panel,
+.modal-card,
+.compare-panel,
+input,
+select,
+textarea {
+  color: var(--ink);
+}
+
+.field label,
+.stat span,
+.small-note,
+.unit,
+.pill,
+.amenities,
+.amenity-chip,
+.detail-block p,
+.footer-note,
+.unit-row span,
+.unit-option-line span,
+.compare-heading span,
+.compare-count,
+.compare-unit-line span,
+.compare-unit-line em,
+.compare-unit-empty,
+.choice-text em,
+.compare-collapsed-list span {
+  color: var(--muted) !important;
+}
+
+.card h3,
+.content-head h2,
+.stat strong,
+.detail-block h4,
+.unit-row strong,
+.unit-option-line strong,
+.compare-unit-line strong,
+.choice-text strong,
+.unit-price,
+.price,
+.badge,
+.media-initials {
+  color: var(--ink) !important;
+}
+
+.unit-link-label,
+.modal-eyebrow,
+.choice-icon,
+.compare-unit-picker summary {
+  color: var(--navy) !important;
+}
+
+.primary,
+.links a,
+.compare-table th,
+.compare-unit-picker[open] summary,
+.hero,
+.hero p,
+.hero-office p,
+button.secondary {
+  color: #FFFFFF !important;
+}
+
+button.ghost,
+button,
+.button-link,
+.reservation-select,
+.icon-button,
+.hotel-remove-icon,
+.unit-remove-icon {
+  color: var(--ink);
 }
